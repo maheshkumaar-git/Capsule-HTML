@@ -1,0 +1,58 @@
+.link1{
+    margin: 0 10px 0 10px;
+    
+    }
+
+    .padding_5{
+        margin: 2px;
+        padding: 15px 0 0 45px;
+    }
+    label{
+    
+        margin: 0 12px 0 0;
+    }
+    
+    .title {
+        font-weight: bold;
+        padding-left : 10px;
+    }
+    
+    
+    .margin-5{
+        margin-bottom: 12px;
+    }
+    
+    
+    button{
+        width: 90px;
+    }
+    
+    .border-none td, .border-none th{
+        border: none;
+    }
+    
+    #taskName {
+        margin-left: 50px;
+    }
+
+    .lbl{
+        width: 120px;
+        font-weight: bold;
+    }
+
+    input, select{
+        width: 30%;
+        background: #eee;
+    }
+
+    .pad-20{
+        padding-top: 20px;
+    }
+
+    .reset{
+        margin-left: 15px;
+    }
+
+    #prior {
+        margin-right: 270px;
+    }

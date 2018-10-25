@@ -1,0 +1,63 @@
+<div class="container padding_5">
+    <h4 class="title">Task Manager</h4>
+
+    <div class="margin-5">
+        <h4>
+            <a class="link1" (click)='Add()'>Add Task</a>
+            <a class="link2" (click)='ViewTask()'>View Task</a>
+        </h4>
+    </div>
+
+    <table class="table border-none addtask_data">
+        <tr>
+            <td class="lbl">Task</td>
+            <td>
+                <input type="text" [(ngModel)]='taskName' />
+            </td>
+        </tr>
+        <tr>
+            <td class="lbl pad-20">Priority</td>
+            <td>
+                <label id='prior'>0</label>
+                <label>{{priority}}</label>
+                <input type="range" min=1 max=30 step="1" [(ngModel)]='priority' data-show-value="true" />
+
+            </td>
+        </tr>
+        <tr>
+            <td class="lbl">Parent Task</td>
+            <td>
+                <select class="form-control" name="Parent_ID" [(ngModel)]="pTaskId">
+                    <option value='null' class="ng-binding">Please Select Task</option>
+                    <option [ngValue]="parent.Id" *ngFor="let parent of ParentList">
+                        {{parent.Parent_Task}}
+                    </option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="lbl">Start Date:</td>
+            <td>
+                <input type="date" [(ngModel)]='sDate' />
+            </td>
+        </tr>
+        <tr>
+            <td class="lbl">End Date:</td>
+            <td>
+                <input type="date" [(ngModel)]='eDate' />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button (click)='AddTask()'>Add Task</button>
+
+                <button class='reset' (click)='Reset()'>Reset</button>
+
+            </td>
+
+        </tr>
+    </table>
+
+</div>

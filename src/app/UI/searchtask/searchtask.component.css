@@ -1,0 +1,50 @@
+.link1{
+margin: 0 10px 0 10px;
+
+}
+
+label{
+
+    margin: 0 12px 0 0;
+}
+
+.title {
+    font-weight: bold;
+    padding-left : 10px;
+}
+.task input {
+    width: 75%;
+}
+
+.padding_5{
+    margin: 2px;
+    padding: 15px 0 0 45px;
+}
+
+.margin-5{
+    margin-bottom: 12px;
+}
+
+.listTbl label {
+
+    width: 200px;
+    height: 75px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: normal;
+    background: #eee;
+    /* width: 90%;
+    padding: 0 150px 50px 0; */
+}
+
+button{
+    width: 90px;
+}
+
+.border-none td, .border-none th{
+    border: none;
+}
+
+#taskName {
+    margin-left: 50px;
+}
